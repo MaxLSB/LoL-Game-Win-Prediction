@@ -1,11 +1,17 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import util
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../client')  # Adjusted static folder path
 
+# Endpoint to serve your HTML file (not needed for /predict_game)
+@app.route('/')
+def index():
+    return "This endpoint is not used."
+
+# Endpoint to handle prediction request
 @app.route('/predict_game', methods=['POST'])
 def predict_game():
-    # Extract data from the POST request
+    # Extract data from the POST request form
     blueFirstBlood = int(request.form['blueFirstBlood'])
     blueKills = int(request.form['blueKills'])
     blueDeaths = int(request.form['blueDeaths'])
@@ -25,14 +31,11 @@ def predict_game():
     )
 
     # Return the prediction as JSON response
-    response = jsonify({
+    return jsonify({
         'result': [result, probability]
     })
-    response.headers.add('Access-Control-Allow-Origin', '*')
-
-    return response
 
 if __name__ == "__main__":
     print('Starting League of Legends Game Prediction Server...')
-    util.load_saved_artifacts()
+    util.load_saved_artifacts()  # Ensure artifacts are loaded correctly
     app.run()
