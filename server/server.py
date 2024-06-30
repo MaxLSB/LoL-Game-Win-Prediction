@@ -3,8 +3,9 @@ import util
 
 app = Flask(__name__)
 
-@app.route('/predict_game',methods=['POST'])
+@app.route('/predict_game', methods=['POST'])
 def predict_game():
+    # Extract data from the POST request
     blueFirstBlood = int(request.form['blueFirstBlood'])
     blueKills = int(request.form['blueKills'])
     blueDeaths = int(request.form['blueDeaths'])
@@ -16,16 +17,22 @@ def predict_game():
     redAssists = int(request.form['redAssists'])
     redDragons = int(request.form['redDragons'])
     redTowersDestroyed = int(request.form['redTowersDestroyed'])
-    
+
+    # Call the function to get prediction
+    result, probability = util.get_game_prediction(
+        blueFirstBlood, blueKills, blueDeaths, blueAssists, blueDragons, blueTowersDestroyed,
+        blueGoldDiff, blueExperienceDiff, redAssists, redDragons, redTowersDestroyed
+    )
+
+    # Return the prediction as JSON response
     response = jsonify({
-        'result': util.get_game_prediction(blueFirstBlood, blueKills, blueDeaths, blueAssists, blueDragons, blueTowersDestroyed, blueGoldDiff, blueExperienceDiff, redAssists, redDragons, redTowersDestroyed)
+        'result': [result, probability]
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
-    
+
     return response
-    
 
 if __name__ == "__main__":
     print('Starting League of Legends Game Prediction Server...')
-    util.load_saved_artifacts() 
+    util.load_saved_artifacts()
     app.run()

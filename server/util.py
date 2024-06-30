@@ -38,4 +38,3 @@ def load_saved_artifacts():
                   
 if __name__ == "__main__":
     load_saved_artifacts()
-    print(get_game_prediction(1, 30, 5, 0, 0, 0, 2000, 200, 0, 0, 0))
