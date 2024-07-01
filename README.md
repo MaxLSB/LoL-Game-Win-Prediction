@@ -1,6 +1,7 @@
-# League of Legends match outcome prediction 
+# <div style="text-align: center;"> League of Legends match outcome prediction </div>
 
-<img src="images/lol_logo.png" alt="Example Image" width="500"/>
+
+<img src="images/lol_logo.png" alt="Example Image" style="text-align: center;" width="500"/>
 
 This project employs a predictive model to forecast the outcome (victory or defeat) of a League of Legends match using data gathered from the first 10 minutes of gameplay.
 
