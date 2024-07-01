@@ -36,4 +36,4 @@ Connect to the server:
 ```
 http://127.0.0.1:5000/
 ```
-<h2> Change the features' values as you please and predict the game outcome! </h2>
+<h2> Change the values of the features as you please and predict the game outcome! </h2>
