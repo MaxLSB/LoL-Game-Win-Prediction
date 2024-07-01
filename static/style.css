@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
     background-image: url('background.jpg'); 
@@ -14,9 +14,9 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(16, 16, 16, 0.8);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(214, 214, 214, 0.43);
 }
 
 .section-title {
@@ -38,6 +38,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 form {
     display: flex;

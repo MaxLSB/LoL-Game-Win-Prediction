@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoL Game Prediction</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Enter you League of Legends game data at 10 min</h2>
+        <h1>Enter your League of Legends Game Data at 10 min</h1>
         <div class="separator"></div>
         <form id="predictionForm">
-            <label for="blueFirstBlood">First Blood (1 = Blue Team / 0 = Red Team) : <span id="blueFirstBloodValue"></span></label>
-            <input type="range" id="blueFirstBlood" name="blueFirstBlood" min="0" max="1" step="1" oninput="updateValue('blueFirstBlood')">
+            <label for="blueFirstBlood">First Blood (1 = Blue Team / 0 = Red Team) : <span id="blueFirstBloodValue">0</span></label>
+            <input type="range" id="blueFirstBlood" name="blueFirstBlood" min="0" max="1" step="1" value="0" oninput="updateValue('blueFirstBlood')">
             
-            <label for="blueKills">Blue Team Kills (Red Team Deaths) : <span id="blueKillsValue"></span></label>
-            <input type="range" id="blueKills" name="blueKills" min="0" max="50" step="1" oninput="updateValue('blueKills')">
+            <label for="blueKills">Blue Team Kills (Red Team Deaths) : <span id="blueKillsValue">0</span></label>
+            <input type="range" id="blueKills" name="blueKills" min="0" max="20" step="1" value="0" oninput="updateValue('blueKills')">
             
-            <label for="blueDeaths">Blue Team Deaths (Red Team Kills) : <span id="blueDeathsValue"></span></label>
-            <input type="range" id="blueDeaths" name="blueDeaths" min="0" max="50" step="1" oninput="updateValue('blueDeaths')">
+            <label for="blueDeaths">Blue Team Deaths (Red Team Kills) : <span id="blueDeathsValue">0</span></label>
+            <input type="range" id="blueDeaths" name="blueDeaths" min="0" max="20" step="1" value="0" oninput="updateValue('blueDeaths')">
             
-            <label for="blueAssists">Blue Team Assists : <span id="blueAssistsValue"></span></label>
-            <input type="range" id="blueAssists" name="blueAssists" min="0" max="50" step="1" oninput="updateValue('blueAssists')">
+            <label for="blueAssists">Blue Team Assists : <span id="blueAssistsValue">0</span></label>
+            <input type="range" id="blueAssists" name="blueAssists" min="0" max="30" step="1" value="0" oninput="updateValue('blueAssists')">
             
-            <label for="blueDragons">Blue Team Dragons : <span id="blueDragonsValue"></span></label>
-            <input type="range" id="blueDragons" name="blueDragons" min="0" max="2" step="1" oninput="updateValue('blueDragons')">
-            
-
-            <label for="blueGoldDiff">Blue Team Gold Difference : <span id="blueGoldDiffValue"></span></label>
-            <input type="range" id="blueGoldDiff" name="blueGoldDiff" min="-10000" max="10000" step="100" oninput="updateValue('blueGoldDiff')">
+            <label for="blueDragons">Blue Team Dragons : <span id="blueDragonsValue">0</span></label>
+            <input type="range" id="blueDragons" name="blueDragons" min="0" max="2" step="1" value="0" oninput="updateValue('blueDragons')">
             
 
-            <label for="blueExperienceDiff">Blue Team Experience Difference : <span id="blueExperienceDiffValue"></span></label>
-            <input type="range" id="blueExperienceDiff" name="blueExperienceDiff" min="-10000" max="10000" step="100" oninput="updateValue('blueExperienceDiff')">
+            <label for="blueGoldDiff">Blue Team Gold Difference : <span id="blueGoldDiffValue">0</span></label>
+            <input type="range" id="blueGoldDiff" name="blueGoldDiff" min="-10000" max="10000" step="100" value="0" oninput="updateValue('blueGoldDiff')">
             
 
-            <label for="redAssists">Red Team Assists : <span id="redAssistsValue"></span></label>
-            <input type="range" id="redAssists" name="redAssists" min="0" max="50" step="1" oninput="updateValue('redAssists')">
+            <label for="blueExperienceDiff">Blue Team Experience Difference : <span id="blueExperienceDiffValue">0</span></label>
+            <input type="range" id="blueExperienceDiff" name="blueExperienceDiff" min="-10000" max="10000" step="100" value="0"  oninput="updateValue('blueExperienceDiff')">
             
 
-            <label for="redDragons">Red Team Dragons : <span id="redDragonsValue"></span></label>
-            <input type="range" id="redDragons" name="redDragons" min="0" max="2" step="1" oninput="updateValue('redDragons')">
+            <label for="redAssists">Red Team Assists : <span id="redAssistsValue">0</span></label>
+            <input type="range" id="redAssists" name="redAssists" min="0" max="30" step="1" value="0" oninput="updateValue('redAssists')">
             
-            <label for="blueTowersDestroyed">Blue Team Towers Destroyed : <span id="blueTowersDestroyedValue"></span></label>
-            <input type="range" id="blueTowersDestroyed" name="blueTowersDestroyed" min="0" max="9" step="1" oninput="updateValue('blueTowersDestroyed')">
 
-            <label for="redTowersDestroyed">Red Team Towers Destroyed : <span id="redTowersDestroyedValue"></span></label>
-            <input type="range" id="redTowersDestroyed" name="redTowersDestroyed" min="0" max="9" step="1" oninput="updateValue('redTowersDestroyed')">
+            <label for="redDragons">Red Team Dragons : <span id="redDragonsValue">0</span></label>
+            <input type="range" id="redDragons" name="redDragons" min="0" max="2" step="1" value="0" oninput="updateValue('redDragons')">
+            
+            <label for="blueTowersDestroyed">Blue Team Towers Destroyed : <span id="blueTowersDestroyedValue">0</span></label>
+            <input type="range" id="blueTowersDestroyed" name="blueTowersDestroyed" min="0" max="9" step="1" value="0" oninput="updateValue('blueTowersDestroyed')">
+
+            <label for="redTowersDestroyed">Red Team Towers Destroyed : <span id="redTowersDestroyedValue">0</span></label>
+            <input type="range" id="redTowersDestroyed" name="redTowersDestroyed" min="0" max="9" step="1" value="0" oninput="updateValue('redTowersDestroyed')">
             
 
             <button type="submit">Predict Winner</button>
