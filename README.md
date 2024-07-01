@@ -1,6 +1,6 @@
 <div style="text-align: center;">
-  <h1>League of Legends match outcome prediction</h1>
-  <img src="images/lol_logo.png" alt="LoL Logo" width="500"/>
+  <h1>League of Legends Match Outcome Prediction</h1>
+  <img src="images/lol_logo.png" alt="LoL Logo" width="600"/>
 </div>
 
 
