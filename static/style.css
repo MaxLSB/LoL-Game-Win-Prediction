@@ -2,19 +2,18 @@ body {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); 
+    background-image: url('background.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: rgba(223, 223, 223, 0.87);
 }
 
-
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgb(16, 16, 16, 0.8);
+    background-color: rgb(16, 16, 16, 0.9);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(214, 214, 214, 0.43);
 }
@@ -36,7 +35,13 @@ body {
 h1 {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 
@@ -64,27 +69,29 @@ input[type="range"] + span {
 }
 
 button {
-    background-color: #ffffff;
+    background-color: #e3e3e3;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 #result {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 #probabilities {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
 }
