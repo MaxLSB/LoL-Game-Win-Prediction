@@ -7,6 +7,10 @@
 
 This project employs a predictive model to forecast the outcome (victory or defeat) of a League of Legends match (Blue Team Vs Red Team) using data gathered from the first 10 minutes of gameplay. The model is deployed using a Flask server, allowing you to select your preferred input parameters.
 
+<div align="center">
+  <img src="images/interface.png" alt="Interface" width="600"/>
+</div>
+
 # Installation
 
 We advise to use a dedicated environnement (conda, mamba, whatever you like) to install the librairies.
