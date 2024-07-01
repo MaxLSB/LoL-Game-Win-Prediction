@@ -3,8 +3,9 @@
   <img src="images/lol_logo.png" alt="LoL Logo" width="600"/>
 </div>
 
+# Introduction
 
-_This project employs a predictive model to forecast the outcome (victory or defeat) of a League of Legends match using data gathered from the first 10 minutes of gameplay._
+This project employs a predictive model to forecast the outcome (victory or defeat) of a League of Legends match (Blue Team Vs Red Team) using data gathered from the first 10 minutes of gameplay. The model is deployed using a Flask server, allowing you to select your preferred input parameters.
 
 # Installation
 
