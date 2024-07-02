@@ -16,7 +16,7 @@ _(If you already know the game, please just go to the Installation section below
 
 If you're unfamiliar with the game League of Legends or various key parameters of a match, here are explanations on how the game works and the meaning of the features used as inputs for the model.
 
-League of Legends is a MOBA where 2 teams of 5 players **(Blue team vs Red team)** compete to destroy the opposing team's base. Each player controls 1 champion with unique abilities, aiming to accumulate resources (Gold, Dragons, Towers, ...) to become stronger and defeat the opposing team. It is one of the games known for its highly complex tactical aspects.
+League of Legends is a Multiplayer Online Battle Arena (MOBA) where 2 teams of 5 players **(Blue team vs Red team)** compete to destroy the opposing team's base. Each player controls 1 champion with unique abilities, aiming to accumulate resources (Gold, Dragons, Towers, ...) to become stronger and defeat the opposing team. It is one of the games known for its highly complex tactical aspects.
 
 - **Gold 🪙:** In-game currency earned by players to buy items that enhance their champion's abilities.
 - **FirstBlood 🩸:** The first kill in the game, which grants bonus gold to the player or team that achieves it.
