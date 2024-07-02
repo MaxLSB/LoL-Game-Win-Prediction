@@ -31,7 +31,7 @@ League of Legends is a Multiplayer Online Battle Arena (MOBA) where 2 teams of 5
 
 # Comments
 
-The accuracy of our model is around 73%, which may seem low at first glance. However, a game of League of Legends lasts on average 20/25 minutes. The individual performances of different players (especially their decision-making and their skills) have a significant impact on the game and can change its outcome despite a purely theoretical deficit.
+The accuracy of our model is around 73%, which may seem low at first glance. However, a game of League of Legends lasts on average 20/25 minutes and thanks to my game knowledge, I know that the individual performances of the players (especially their decision-making and their skills) have a significant impact on the game and can change its outcome despite a purely theoretical deficit.
 
 Therefore, an accuracy of 73% actually makes sense in the context of this game as so much can happen in the next 10/15 minutes.
 
