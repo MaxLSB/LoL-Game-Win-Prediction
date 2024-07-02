@@ -20,7 +20,7 @@ League of Legends is a MOBA where 2 teams of 5 players **(Blue team vs Red team)
 
 - **Gold 🪙:** In-game currency earned by players to buy items that enhance their champion's abilities.
 - **FirstBlood 🩸:** The first kill in the game, which grants bonus gold to the player or team that achieves it.
-- **Kills ❌: ** Number of enemy champions a player has defeated (each kill gives gold).
+- **Kills ❌:** Number of enemy champions a player has defeated (each kill gives gold).
 - **Deaths 💀:** Number of times a player's champion has been defeated by an enemy.
 - **Assists ✅:** Number of times a player has contributed to defeating an enemy champion without landing the killing blow (each assist gives gold).
 - **Dragons 🐉:** Powerful neutral monsters on the map that grant team-wide buffs when killed (each Dragon also gives gold/exp to all players).
