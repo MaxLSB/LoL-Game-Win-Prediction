@@ -27,6 +27,12 @@ League of Legends is a Multiplayer Online Battle Arena (MOBA) where 2 teams of 5
 - **Experience 🆙:** Points accumulated by a champion to level up and improve their abilities throughout the game (each level makes your champion stronger)
 - **Towers 🗿:** Defensive structures located along the lanes that players must destroy to advance toward the enemy's base (each tower destroyed gives gold)
 
+# Comments
+
+The accuracy of our model is only around 73%, which may seem low at first glance. However, a game of League of Legends lasts on average 20/25 minutes. The individual performances of different players (especially their decision-making and their skills) have a significant impact on the game and can change its outcome despite a purely theoretical deficit.
+
+Therefore, an accuracy of 73% actually makes sense in the context of this game as so much can happen in the next 10/15 minutes.
+
 # Installation
 
 We advise to use a dedicated environnement (conda, mamba, whatever you like) to install the librairies.
