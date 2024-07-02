@@ -11,6 +11,22 @@ This project employs a predictive model to forecast the outcome (victory or defe
   <img src="images/interface.png" alt="Interface" width="600"/>
 </div>
 
+# Information
+_If you already know those information please just go to the Installation section below!_
+
+If you're unfamiliar with the game League of Legends or various key parameters of a match, here are explanations on how the game works and the meaning of the features used as inputs for the model.
+
+League of Legends is a MOBA where 2 teams of 5 players (blue team vs red team) compete to destroy the opposing team's base. Each player controls 1 champion with unique abilities, aiming to accumulate resources (Gold, Dragons, Towers, ...) to become stronger and defeat the opposing team. It is one of the games known for its highly complex tactical aspects.
+
+- Gold: In-game currency earned by players to buy items that enhance their champion's abilities.
+- FirstBlood : The first kill in the game, which grants bonus gold to the player or team that achieves it.
+- Kills: Number of enemy champions a player has defeated (each kill gives gold).
+- Deaths: Number of times a player's champion has been defeated by an enemy.
+- Assists: Number of times a player has contributed to defeating an enemy champion without landing the killing blow (each assist gives gold).
+- Dragons: Powerful neutral monsters on the map that grant team-wide buffs when killed (each Dragon also gives gold/exp to all players).
+- Experience: Points accumulated by a champion to level up and improve their abilities throughout the game (each level makes your champion stronger)
+- Towers: Defensive structures located along the lanes that players must destroy to advance toward the enemy's base (each tower destroyed gives gold)
+
 # Installation
 
 We advise to use a dedicated environnement (conda, mamba, whatever you like) to install the librairies.
