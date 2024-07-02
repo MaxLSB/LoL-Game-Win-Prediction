@@ -5,6 +5,8 @@
 
 # Introduction
 
+League of Legends is one of my favorite video games, and I've been interested in understanding how much the first few minutes of the game impact its outcome. So I decided to start this project in my spare time.
+
 This project employs a predictive model to forecast the outcome (victory or defeat) of a League of Legends match (Blue Team Vs Red Team) using data gathered from the first 10 minutes of gameplay. The model is deployed using a Flask server, allowing you to select your preferred input parameters.
 
 <div align="center">
