@@ -12,7 +12,7 @@ This project employs a predictive model to forecast the outcome (victory or defe
 </div>
 
 # Information
-_(If you already know the game please just go to the Installation section below!)_
+_(If you already know the game, please just go to the Installation section below!)_
 
 If you're unfamiliar with the game League of Legends or various key parameters of a match, here are explanations on how the game works and the meaning of the features used as inputs for the model.
 
