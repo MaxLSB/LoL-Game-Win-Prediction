@@ -37,7 +37,7 @@ Therefore, an accuracy of 73% actually makes sense in the context of this game a
 
 # Installation
 
-We advise to use a dedicated environnement (conda, mamba, whatever you like) to install the librairies.
+Use a dedicated environnement to install the librairies.
 
 Clone repo :
 ```
